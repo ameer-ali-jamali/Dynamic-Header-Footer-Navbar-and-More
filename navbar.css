@@ -1,10 +1,25 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-font-family:Arial, Helvetica, sans-serif;
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 5px 0px red;
+    }
+
+    60% {
+        box-shadow: 0px 0px 5px 5px black;
+    }
+}
+
+.header-logo {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
 }
 
 .navbar-position {
@@ -16,10 +31,49 @@ font-family:Arial, Helvetica, sans-serif;
 
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-.nav-link{
+
+.nav-item .nav-link:hover {
+    box-shadow: 0px 6px 7px 5px black;
+    margin-top: -1px;
+    margin-right: 2px;
+}
+
+.nav-link {
     color: black;
+    font-weight: 600;
+}
+
+.navbar {
+    background: linear-gradient(150deg, cornflowerblue, aquamarine, slategrey);
+
+}
+
+.navbar-collapse-bg-color {
+    background: linear-gradient(150deg, cornflowerblue, aquamarine, slategrey);
+    position: relative;
+    margin-top: -6px;
+
+}
+
+@media (max-width:194px) {
+    .navbar-hide-brand {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width:195px) and (max-width:300px) {
+
+    .navbar-hide-brand {
+        font-size: 13px;
+        color: black;
+        font-weight: 500;
+    }
+
+
 }
