@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    height: 100%;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0px 0px 5px 0px red;
@@ -13,7 +18,6 @@
         box-shadow: 0px 0px 5px 5px black;
     }
 }
-
 .header-logo {
     animation-name: pulse;
     animation-duration: 1.5s;
@@ -24,10 +28,15 @@
 
 .navbar-position {
     position: fixed;
-    z-index: 34;
     width: 100%;
     max-width: inherit;
-    height: 10%;
+    z-index: 28;
+    height: 70px !important;
+
+}
+
+.nav-bg-color {
+    background: linear-gradient(150deg, cornflowerblue, aquamarine, slategrey);
 
 }
 
@@ -36,49 +45,49 @@ a {
     color: black;
 }
 
-.nav-item .nav-link:hover {
-    box-shadow: 0px 6px 7px 5px black;
-    margin-top: -0px;
-    margin-right: 1px;
-    color: red;
-    font-weight: bold;
-}
-.nav-brand-{
-    color: black;
-    font-weight: bold;
-}
-
 .nav-link {
     color: black;
     font-weight: 600;
 }
 
-.navbar {
-    background: linear-gradient(150deg, cornflowerblue, aquamarine, slategrey);
-
+.nav-item .nav-link:hover {
+    box-shadow: 0px 6px 7px 5px black;
+    margin-top: -0px;
+    margin-right: 1px;
+    color: blue;
+    font-weight: bold;
 }
 
-.navbar-collapse-bg-color {
-    background: linear-gradient(150deg, cornflowerblue, aquamarine, slategrey);
-    position: relative;
-    margin-top: -8px;
-
+.nav-brand- {
+    color: black;
+    font-weight: bold;
 }
 
-@media (max-width:194px) {
-    .navbar-hide-brand {
-        display: none;
+.nav-drpdown-item {
+    text-align: center;
+}
+
+
+
+/*
+================
+Media Queries
+===================== 
+*/
+
+
+
+@media only screen and (min-width:10px) and (max-width:300px) {
+    .navbar-toggler {
+        color: black;
+        font-size: 15px;
+        font-weight: 600;
     }
-
-
-}
-
-@media only screen and (min-width:195px) and (max-width:300px) {
 
     .navbar-hide-brand {
         font-size: 13px;
         color: black;
-        font-weight: 500;
+        font-weight: 600;
     }
 
 
