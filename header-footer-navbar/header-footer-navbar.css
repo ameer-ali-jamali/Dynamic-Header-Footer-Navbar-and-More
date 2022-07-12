@@ -71,12 +71,6 @@ a {
     text-align: center;
 }
 
-.footer-container-width {
-    position: absolute;
-    width: 100%;
-    max-width: inherit;
-}
-
 /*
 ================
 Media Queries
