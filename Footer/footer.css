@@ -1,4 +1,6 @@
-
+a{
+    text-decoration: none !important;
+}
 .span-or {
     display: block;
     position: absolute;
