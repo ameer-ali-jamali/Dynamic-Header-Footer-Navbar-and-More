@@ -8,12 +8,14 @@ body {
     height: 100%;
     width: 100%;
 }
-img{
-    object-fit:contain;
+
+img {
+    object-fit: contain;
     height: 100%;
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
@@ -26,7 +28,49 @@ a{
 Media Queries
 ==================
 */
+@media (max-width:119px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+        margin-left: -3px;
+        margin-right: -6px;
+    }
 
-@media only screen only (){
-    
+    .detail-btn {
+        font-size: 3px;
+    }
+
+    .add-cart-btn {
+        font-size: 3px;
+    }
+
+}
+
+@media only screen and (min-width:120px) and (max-width:189px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+    .detail-btn {
+        font-size: 6px;
+    }
+
+    .add-cart-btn {
+        font-size: 7px;
+    }
+
+}
+
+@media (min-width:190px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
 }
